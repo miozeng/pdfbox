@@ -8,9 +8,11 @@ import java.awt.print.PrinterException;
 import java.awt.print.PrinterJob;
 import java.io.File;
 import java.io.IOException;
+
 import javax.print.attribute.HashPrintRequestAttributeSet;
 import javax.print.attribute.PrintRequestAttributeSet;
 import javax.print.attribute.standard.PageRanges;
+
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.printing.PDFPageable;
 import org.apache.pdfbox.printing.PDFPrintable;
@@ -40,9 +42,9 @@ public final class Printing
         PDDocument document = PDDocument.load(new File(filename));
         
         // choose your printing method:
-        print(document); 
+//        print(document); 
         //printWithAttributes(document);
-        //printWithDialog(document);
+        printWithDialog(document);
         //printWithDialogAndAttributes(document);
         //printWithPaper(document);
     }
@@ -55,6 +57,7 @@ public final class Printing
         PrinterJob job = PrinterJob.getPrinterJob();
         job.setPageable(new PDFPageable(document));
         job.print();
+        
     }
 
     /**

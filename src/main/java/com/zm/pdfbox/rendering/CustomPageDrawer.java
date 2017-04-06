@@ -11,7 +11,9 @@ import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+
 import javax.imageio.ImageIO;
+
 import org.apache.pdfbox.contentstream.PDFGraphicsStreamEngine;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.font.PDFont;
@@ -46,15 +48,15 @@ public class CustomPageDrawer
 //        ImageIO.write(image, "PNG", new File("target/custom-render.png"));
 //        doc.close();
     	CustomPageDrawer d =  new CustomPageDrawer();
-    	d.createImage("HK00034 (06.16) ITA reduced sum insured (bilingual).pdf", "image034.png");
-    	d.createImage("HK00047 (04.16) Benefits Claims statistic (bilingual).pdf", "image047.png");
-    	d.createImage("HK00050 (07.16) Why do we all need protection (EN).pdf", "image050.png");
-    	d.createImage("HK00055 (07.16) Investment Flipchart (EN).pdf", "image055.png");
-    	d.createImage("HK00063 (07.16) Business Protection loan protection (EN).pdf", "image063.png");
-    	d.createImage("HK00083 (07.16) Pacific new business checklist (EN).pdf", "image083.png");
-    	d.createImage("HK00125 (08.16) Pacific Investment Choice Brochure (EN).pdf", "image125.png");
-    	d.createImage("HK00125CH (08.16) Pacific Investment Choice Brochure (CH).pdf", "image125ch.png");
-    	d.createImage("HK00132 (07.16) Pacific Product Brochure (EN).pdf", "image132.png");
+    	d.createImage("image.pdf", "image034.png");
+//    	d.createImage("HK00047 (04.16) Benefits Claims statistic (bilingual).pdf", "image047.png");
+//    	d.createImage("HK00050 (07.16) Why do we all need protection (EN).pdf", "image050.png");
+//    	d.createImage("HK00055 (07.16) Investment Flipchart (EN).pdf", "image055.png");
+//    	d.createImage("HK00063 (07.16) Business Protection loan protection (EN).pdf", "image063.png");
+//    	d.createImage("HK00083 (07.16) Pacific new business checklist (EN).pdf", "image083.png");
+//    	d.createImage("HK00125 (08.16) Pacific Investment Choice Brochure (EN).pdf", "image125.png");
+//    	d.createImage("HK00125CH (08.16) Pacific Investment Choice Brochure (CH).pdf", "image125ch.png");
+//    	d.createImage("HK00132 (07.16) Pacific Product Brochure (EN).pdf", "image132.png");
     }
     
     public void createImage(String fileName, String imgName)throws IOException{
